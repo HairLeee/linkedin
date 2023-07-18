@@ -1,4 +1,6 @@
 package com.chinhhoang.linkedin.presentation.viewmodel
 
-class MainViewModel {
+import com.chinhhoang.linkedin.common.base.BaseViewModel
+
+class MainViewModel : BaseViewModel() {
 }
