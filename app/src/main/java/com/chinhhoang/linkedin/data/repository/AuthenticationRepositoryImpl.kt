@@ -12,7 +12,7 @@ class AuthenticationRepositoryImpl constructor(
     private val weatherApi: WeatherApi
 ): AuthenticationRepository {
     override suspend fun login(request: LoginRequest): LoginRp {
-        return LoginRp(success = true)
+        return weatherApi.login(request)
     }
 
     override suspend fun register(request: RegisterRq): Boolean {

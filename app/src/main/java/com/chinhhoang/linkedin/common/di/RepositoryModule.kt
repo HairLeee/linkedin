@@ -5,5 +5,5 @@ import com.chinhhoang.linkedin.domain.repositories.AuthenticationRepository
 import org.koin.dsl.module
 
 val repositoryModule = module{
-    factory<AuthenticationRepository> { AuthenticationRepositoryImpl()  }
+    factory<AuthenticationRepository> { AuthenticationRepositoryImpl(get())  }
 }

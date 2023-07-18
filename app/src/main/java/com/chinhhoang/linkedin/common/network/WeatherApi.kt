@@ -1,6 +1,7 @@
 package com.chinhhoang.linkedin.common.network
 
 import com.chinhhoang.linkedin.data.entiti.request.LoginRequest
+import com.chinhhoang.linkedin.data.entiti.response.LoginRp
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
@@ -8,13 +9,11 @@ import retrofit2.http.Query
 
 interface WeatherApi {
 
-    @GET("weather")
-    suspend fun getForecast(
-        @Query("q") location: String,
-        @Query("units") unit: String
-    ): String
-
     @POST("weather")
     suspend fun login(@Body loginRequest: LoginRequest
-    ): String
+    ): LoginRp
+
+    companion object {
+        const val NEWS_API_URL = "https://newsapi.org/v2/"
+    }
 }
