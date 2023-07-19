@@ -4,7 +4,6 @@ import android.os.Bundle
 import com.chinhhoang.linkedin.R
 import com.chinhhoang.linkedin.common.base.BaseActivity
 import com.chinhhoang.linkedin.data.entiti.request.LoginRequest
-import kotlinx.android.synthetic.main.activity_login.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class LoginActivity : BaseActivity() {
